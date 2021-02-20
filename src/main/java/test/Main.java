@@ -1,4 +1,4 @@
-package com.test;
+package test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -9,10 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args)
