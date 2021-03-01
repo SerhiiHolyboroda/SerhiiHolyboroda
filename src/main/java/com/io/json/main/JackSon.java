@@ -25,7 +25,7 @@ public class JackSon {
 
         try {
 
-            // JSON file to Java object
+
             DataJson staff = mapper.readValue(new File("standing.json"), DataJson.class);
 
             System.out.println(staff);
