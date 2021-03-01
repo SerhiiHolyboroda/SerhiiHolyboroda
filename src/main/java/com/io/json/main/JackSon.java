@@ -28,17 +28,7 @@ public class JackSon {
             // JSON file to Java object
             DataJson staff = mapper.readValue(new File("standing.json"), DataJson.class);
 
-            // JSON string to Java object
-            String jsonInString = "{\"name\":\"mkyong\",\"age\":37,\"skills\":[\"java\",\"python\"]}";
-            DataJson staff2 = mapper.readValue(jsonInString, DataJson.class);
-
-            // compact print
-            System.out.println(staff2);
-
-            // pretty print
-            String prettyStaff1 = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(staff2);
-
-            System.out.println(prettyStaff1);
+            System.out.println(staff);
 
 
         } catch (IOException e) {
