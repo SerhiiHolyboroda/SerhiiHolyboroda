@@ -1,13 +1,15 @@
 package com.io.json.classes;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class DataJson {
     private String position;
     private String positionText;
     private String points;
     private String wins;
+     @JsonProperty("Driver")
+     private com.example.Driver driver;
 
-    public DataJson() {
-    }
 
 
     public String getPosition() {
@@ -41,4 +43,14 @@ public class DataJson {
     public void setWins(String wins) {
         this.wins = wins;
     }
+
+    public com.example.Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(com.example.Driver driver) {
+        this.driver = driver;
+    }
+
+
 }
